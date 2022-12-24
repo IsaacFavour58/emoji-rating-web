@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background:linear-gradient(to right, rgb(217, 255, 0),rgb(81, 255, 0));
+}
+.emoji-container{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    box-shadow: 1px 4px 8px rgba(1, 1, .4);
+    border-radius: 10px;
+    position: relative;
+}
+.emoji{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+}
+.far{
+    margin: 1px;
+    transform: translateX(0);
+    transition: transform 0.5s;
+}
+.star{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20%;
+}
+.fa-sharp {
+    color: lightgrey;
+    cursor: pointer;
+}
+.fa-sharp.active{
+    color: gold;
+}
+.click{
+    font-size: 12px;
+}
+.click h1{
+    color: goldenrod;
+}
+@media screen and (max-width:400px){
+    
+}
